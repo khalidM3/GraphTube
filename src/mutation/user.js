@@ -45,7 +45,6 @@ export const addToWatchHistory = {
 export const clearWatchHistory = {
 	type: userType,
 	args: {
-		id: { name: 'ID', type: new GraphQLNonNull(GraphQLID)},
 		uid: { name: 'USER', type: new GraphQLNonNull(GraphQLString)},
 	},
 	resolve: (root, args) => User.clearWatchHistory(args)

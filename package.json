@@ -1,13 +1,12 @@
 {
-  "name": "graphQL-proj",
+  "name": "VideoGraph",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/khalidM3/graphQL-proj.git",
   "author": "Khalid Mohamud <kmohamud1@outlook.com>",
   "license": "MIT",
   "scripts": {
-    "dev:server": "nodemon server.js",
-    "json:server": "json-server --watch data.json"
+    "start": "nodemon index.js"
   },
   "dependencies": {
     "bluebird": "^3.4.7",

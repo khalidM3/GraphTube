@@ -1,7 +1,6 @@
 'use strict'
 
 // DEPENDECIES
-
 import createError from 'http-errors'
 import Mongoose, {Schema} from 'mongoose'
 
@@ -94,6 +93,22 @@ User.fetchWatchLater = function(data) {
   .populate('watchLater')
   .then( user => {
     return user.watchLater
+  })
+}
+
+User.fetchFollowers = function(data) {
+  return User.findById(data.uid)
+  .populate('followers')
+  .then( user => {
+    return user.followers
+  })
+}
+
+User.fetchFollowing = function(data) {
+  return User.findById(data.uid)
+  .populate('following')
+  .then( user => {
+    return user.following
   })
 }
 
