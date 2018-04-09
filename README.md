@@ -53,36 +53,35 @@ There are nine queries in total
     * this query gets all the users in the database
     * type: User
 
-2. fetchUser(id: ID!): User
+2. fetchUser(id: ID!)
     * this query gets a specified user
     * type: User
     * arguments:
         1. id : id of the user that is being fetched
 
-
-3. fetchFollowers(id: ID!): [User]
+3. fetchFollowers(id: ID!)
     * this query gets a users followers
     * type: User
     * arguments:
         1. id : id of the user 
 
-3. fetchFollowing(id: ID!): [User]
+3. fetchFollowing(id: ID!)
     * This query fetches a users following
     * type: User
     * arguments:
         1. id : id of the user
 
-4. fetchVideo(id: ID!): Video
+4. fetchVideo(id: ID!)
     * This query fetches a video by its id
     * type: Video
     * arguments:
         1. id : id of the video to fetch
-
-5. fetchAllVideo: [Video]
+        
+5. fetchAllVideo
     * This query fetches all the users in the db
     * type: Video
 
-6. fetchMyVideos(id: ID!): [Video]
+6. fetchMyVideos(id: ID!)
     * This query fetches all the videos a user posted
     * type: Video
     * arguments:
@@ -105,70 +104,70 @@ There are nine queries in total
 
 #### Fields
 
- 1. userAdd(data: UserInput!): User
+ 1. userAdd(data: UserInput!)
     * type: User
     * arguments
         1. data
 
-2. userFollow(id: ID!uid: String!): User
+2. userFollow(id: ID!uid: String!)
     * type: User
     * arguments:
         1. id : id of the user that is being followed
         2. uid: id of the user that is following
   
-3. userUpdate(id: ID!data: UserInput!): User
+3. userUpdate(id: ID!data: UserInput!)
     * type: User
     * arguments: 
         1. id : id of the user being updated
         2. data : the updated user
 
-4. userDelete(id: ID!): User
+4. userDelete(id: ID!)
     * type: User
     * arguments:
         1. id: id of the user being deleted
 
-5. addToWatchLater(id: ID!uid: String!): User
+5. addToWatchLater(id: ID!uid: String!)
     * type: User
     * arguments: 
         1. id: id of the video to added to watch later
         2. uid: id of the user who  wants to watch later
 
-6. addToWatchHistory(id: ID!uid: String!): User
+6. addToWatchHistory(id: ID!uid: String!)
     * type: User
     * arguments:
         1. id : id of the video to added to watch history
         2. uid: the id of user of the history the video is being added to 
 
-7. clearWatchHistory(id: ID!uid: String!): User
+7. clearWatchHistory(id: ID!uid: String!)
     * type: User
     * arguments:
         1. uid : the id of the user whos history is being cleared
 
-8. addVideo(data: VideoInput!): Video
+8. addVideo(data: VideoInput!)
     * type: video
     * arguments:
         1. data : the data of the video
 
-9. likeVideo(id: ID! user: String!): Video
+9. likeVideo(id: ID! user: String!)
     * type: video
     * arguments:
         1. id : the id of the video to liked
         2. user : the id of the user making the request
 
-10. dislikeVideo(id: ID!user: String!): Video
+10. dislikeVideo(id: ID!user: String!)
     * type: video
     * arguments:
         1. id : the id of the video to disliked
         2. user : the id of the user making the request
 
-11. updateVideo(id: ID!user: String!data: VideoInput!): Video
+11. updateVideo(id: ID!user: String!data: VideoInput!)
     * type: video
     * arguments: 
         1. id : the id of the video to update
         2. user: the id of the user making the request
         3. data : the updated video
 
-12. deleteVideo(id: ID!uid: String!): Video
+12. deleteVideo(id: ID!uid: String!)
     * type: video
     * arguments:
         1. id : the id of the video to delete
