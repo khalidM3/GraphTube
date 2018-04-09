@@ -59,7 +59,6 @@ There are nine queries in total
     * arguments:
         1. id : id of the user that is being fetched
 
-
 3. fetchFollowers(id: ID!)
     * this query gets a users followers
     * type: User
@@ -77,7 +76,7 @@ There are nine queries in total
     * type: Video
     * arguments:
         1. id : id of the video to fetch
-
+        
 5. fetchAllVideo
     * This query fetches all the users in the db
     * type: Video
