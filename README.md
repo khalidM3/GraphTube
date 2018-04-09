@@ -50,52 +50,52 @@ There are nine queries in total
 
 #### Fields
 1. fetchAllUsers
-this query gets all the users in the database
+    * this query gets all the users in the database
     * type: User
 
 2. fetchUser(id: ID!)
-this query gets a specified user
+    * this query gets a specified user
     * type: User
     * arguments:
         1. id : id of the user that is being fetched
 
 
 3. fetchFollowers(id: ID!)
-this query gets a users followers
+    * this query gets a users followers
     * type: User
     * arguments:
         1. id : id of the user 
 
 3. fetchFollowing(id: ID!)
-This query fetches a users following
+    * This query fetches a users following
     * type: User
     * arguments:
         1. id : id of the user
 
 4. fetchVideo(id: ID!)
-This query fetches a video by its id
+    * This query fetches a video by its id
     * type: Video
     * arguments:
         1. id : id of the video to fetch
 
 5. fetchAllVideo
-    This query fetches all the users in the db
+    * This query fetches all the users in the db
     * type: Video
 
 6. fetchMyVideos(id: ID!)
-    This query fetches all the videos a user posted
+    * This query fetches all the videos a user posted
     * type: Video
     * arguments:
         1. id : id of the user making the request
 
 7. fetchWatchLater: [Video]
-    This query fetches all the videos a saved for later
+    * This query fetches all the videos a saved for later
     * type: Video
     * arguments:
         1. id : id of the user making request
 
 8. fetchWatchHistory: [Video]
-    This query fetches all the videos the user watched
+    * This query fetches all the videos the user watched
     * type: Video
     * arguments:
         1. id : id of the user making the request
