@@ -3,6 +3,8 @@ import {
   GraphQLList,
   GraphQLNonNull
 } from 'graphql';
+
+// TYPES
 import { videoType } from '../type/video';
 
 // MODELS
@@ -12,20 +14,14 @@ import User from '../model/user'
 export const fetchVideo = {
 	type: videoType,
 	args: {
-		id: { name: 'ID',
-			type: new GraphQLNonNull(GraphQLID)
-		}
+		id: { name: 'ID', type: new GraphQLNonNull(GraphQLID) }
 	},
-	resolve: (root, params) => {
-		return Video.findById(params.id).exec()
-	}
+	resolve: (root, params) => Video.findById(params.id).exec()
 }
 
 export const fetchAllVideo = {
   type: new GraphQLList(videoType),
-  resolve: () => {
-    return Video.find().exec()
-  }
+  resolve: () => Video.find().exec()
 }
 
 export const fetchMyVideos = {
@@ -33,9 +29,7 @@ export const fetchMyVideos = {
   args: {
     id: { name: 'ID', type: new GraphQLNonNull(GraphQLID) }
   },
-  resolve: (root, args) => {
-    return Video.fetchMyVideos(args.id)
-  }
+  resolve: (root, args) => Video.fetchMyVideos(args.id)
 }
 
 export const fetchWatchLater = {
