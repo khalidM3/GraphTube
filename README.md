@@ -20,9 +20,9 @@ Install the dependencies and devDependencies and start the server.
 $ yarn install
 ```
 create a .env file and add the following properties
+
 ```
 MONGODB_URI='mongodb://localhost/graphtube'
-PORT='3000'
 
 ```
 
@@ -31,7 +31,7 @@ PORT='3000'
 ```sh
 $ node start
 ```
-Now you can make requests to `localhost:3000`
+Now you can make requests to `localhost:4000`
 
 ### Models
 There are two models in this api
