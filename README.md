@@ -26,11 +26,12 @@ PORT='3000'
 
 ```
 
-###### start the server
+##### start the server
 
 ```sh
 $ node start
 ```
+Now you can make requests to `localhost:3000`
 
 ### Models
 There are two models in this api
