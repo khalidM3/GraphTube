@@ -12,7 +12,7 @@ mongoose.connect(process.env.MONGODB_URI, {useMongoClient: true})
 const app = express()
 
 
-app.use('/graphql', graphqlHTTP({
+app.use('/', graphqlHTTP({
   schema,
   graphiql: true,
   pretty: true,
