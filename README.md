@@ -1,6 +1,9 @@
-# VideoGraph
-___
+# GraphTube
+GraphTube is a api built on GraphQL, Node, express and Mongoose, that lets you 
+post videos, like and dislike them, follow other user and much more
 ### Getting started
+##### Requirements
+This api uses a Mongodb database, so you will need one in order to use it.
 
 ##### Download
 
@@ -47,30 +50,30 @@ There are nine queries in total
 
 #### Fields
 1. fetchAllUsers
-  this query gets all the users in the database
+this query gets all the users in the database
     * type: User
 
 2. fetchUser(id: ID!): User
-  this query gets a specified user
+this query gets a specified user
     * type: User
     * arguments:
         1. id : id of the user that is being fetched
 
 
 3. fetchFollowers(id: ID!): [User]
-  this query gets a users followers
+this query gets a users followers
     * type: User
     * arguments:
         1. id : id of the user 
 
 3. fetchFollowing(id: ID!): [User]
-    This query fetches a users following
+This query fetches a users following
     * type: User
     * arguments:
         1. id : id of the user
 
 4. fetchVideo(id: ID!): Video
-    This query fetches a video by its id
+This query fetches a video by its id
     * type: Video
     * arguments:
         1. id : id of the video to fetch
