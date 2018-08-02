@@ -22,7 +22,6 @@ $ yarn install
 create a .env file and add the following properties
 ```
 MONGODB_URI='<MONGODB URI>'
-
 ```
 ##### start the server
 ```sh
