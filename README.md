@@ -1,38 +1,36 @@
-# GraphTube
+<h1 align="center"> GraphTube </h1>
 GraphTube is a api built on GraphQL, Node, express and Mongoose, that lets you 
-post videos, like and dislike them, follow other user and much more
-### Getting started
-##### Requirements
-This api uses a Mongodb database, so you will need one in order to use it.
+post videos, like and dislike them, follow other user and much more. 
+
+# Getting started
+
+## Environment
+* This api uses a Mongodb database, so you will need one in order to use it.
+
+## Installing
 
 ##### Download
-
 First clone the repository 
 ```sh
 $ git clone https://github.com/khalidM3/GraphTube.git
 ```
-
 ##### Set up
-
 Install the dependencies and devDependencies and start the server.
-
 ```sh
 $ yarn install
 ```
 create a .env file and add the following properties
+```
+MONGODB_URI='<MONGODB URI>'
 
 ```
-MONGODB_URI='mongodb://localhost/graphtube'
-
-```
-
 ##### start the server
-
 ```sh
 $ node start
 ```
 Now you can make requests to `localhost:4000`
 
+# API reference
 ### Models
 There are two models in this api
 1. User
@@ -47,9 +45,8 @@ There are two models in this api
 4. VideoInput
 
 ### Queries
-There are nine queries in total
+There are nine queries in total inluding :
 
-#### Fields
 1. fetchAllUsers
     * this query gets all the users in the database
     * type: User
@@ -101,9 +98,7 @@ There are nine queries in total
         1. id : id of the user making the request
 
 ### Mutations
-  There are 12 mutations in this app
-
-#### Fields
+There are 12 mutations in this app
 
  1. userAdd(data: UserInput!)
     * type: User
