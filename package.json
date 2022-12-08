@@ -11,7 +11,7 @@
   "dependencies": {
     "bluebird": "^3.4.7",
     "dotenv": "^5.0.1",
-    "express": "^4.14.1",
+    "express": "^4.17.3",
     "express-graphql": "^0.6.3",
     "graphql": "^0.9.1",
     "mongoose": "^4.8.5",
